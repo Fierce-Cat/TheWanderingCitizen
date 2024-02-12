@@ -1,5 +1,5 @@
-name: 功能请求 Feature Request Form
-description: An amazing form for any new features.
+name: "功能请求 Feature Request Form"
+description: "An amazing form for any new features."
 title: "[功能请求]: "
 body:
 - type: textarea
