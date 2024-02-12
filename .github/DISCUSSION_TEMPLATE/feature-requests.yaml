@@ -18,6 +18,19 @@ body:
   attributes:
     label: 功能要求 Functional Requirements
     description: 为了解决这个问题，我们应该新增哪些功能？
-    placeholder: "- 用户可以搜索/查看事件\n - 用户可以从事件中注册/取消注册\n - 管理员可以创建/查看/更新/删除事件\n - 管理员可以获取活动的注册用户列表\n - 支持多个城市和国家"
+    placeholder: "- 用户可以搜索/查看活动\n - 用户可以从活动中注册/取消注册\n - 管理员可以创建/查看/更新/删除活动\n - 管理员可以获取活动的注册用户列表\n - 支持多个城市和国家、线上"
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 用户与管理员角色 User and Admin Roles
+    description: 用户和管理员具有不同的角色，我们是否需要区分？
+    placeholder: "- 管理员可以创建/查看/更新/搜索/删除活动。\n - 管理员还可以获取活动的注册用户列表。\n - 户可以注册/注销活动、搜索活动、查看活动。"
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 用户使用流程 User Usage Flow
+    description: 用户在通常情况下会如何使用我们的服务？
   validations:
     required: true
