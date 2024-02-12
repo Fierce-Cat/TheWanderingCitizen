@@ -1,0 +1,39 @@
+- type: textarea
+  attributes:
+    label: 问题描述 Problem Statement
+    description: 你遇到了什么问题，是目前我们的系统无法提供的？
+    placeholder: "示例：多个前端项目（网络和应用程序）需要请求一项新服务，该服务将允许用户注册不同类型的现场活动，例如 BarCitizen, Impacts 等。"
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 基本认知 Basic Understanding
+    description: 为了解决这个问题，我们现有的架构将会怎么做？
+    placeholder: "每个现场活动地点都需要自己的服务器、数据库和网站。在没有任何服务器的情况下，当场构建这个系统将非常困难。任何第三方应用程序/电影票应用程序都应与活动的服务器一起获取座位可用性信息。"
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    label: 功能要求 Function Requirements
+- type: dropdown
+  attributes:
+    label: Version
+    description: What version of our software are you running?
+    multiple: false
+    options:
+      - 1.0.2 (Default)
+      - 1.0.3 (Edge)
+    default: 0
+  validations:
+    required: true
+- type: checkboxes
+  attributes:
+    label: Code of Conduct
+    description: The Code of Conduct helps create a safe space for everyone. We require
+      that everyone agrees to it.
+    options:
+      - label: I agree to follow this project's [Code of Conduct](link/to/coc)
+        required: true
+- type: markdown
+  attributes:
+    value: "Thanks for completing our form!"
