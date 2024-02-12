@@ -14,6 +14,14 @@ body:
     placeholder: "每个现场活动地点都需要自己的服务器、数据库和网站。在没有任何服务器的情况下，当场构建这个系统将非常困难。任何第三方应用程序/电影票应用程序都应与活动的服务器一起获取座位可用性信息。"
   validations:
     required: true
-- type: markdown
+- type: textarea
   attributes:
-    value: "在这里列出你所需要的功能"
+    label: 功能要求 Functional Requirements
+    description: 为了解决这个问题，我们应该新增哪些功能？
+    placeholder: "用户可以搜索/查看事件
+用户可以从事件中注册/取消注册
+管理员可以创建/查看/更新/删除事件
+管理员可以获取活动的注册用户列表
+支持多个城市和国家"
+  validations:
+    required: true
